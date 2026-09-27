@@ -307,9 +307,8 @@ async function makePrediction() {
 
         // Send data to Flask backend
 
-        const response = await fetch(
-            "http://127.0.0.1:5000/predict",
-            {
+        const response = await 
+                fetch("https://heart-disease-prediction-api-yk6o.onrender.com/predict", {
 
                 method: "POST",
 
